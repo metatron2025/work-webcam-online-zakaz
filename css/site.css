@@ -347,4 +347,6 @@ p { margin: 0 0 1em; text-wrap: pretty; }
 .varianty { display: flex; flex-wrap: wrap; }
 .poluchi h2 { margin-bottom: 16px; }
 .poluchi .knopka { margin-top: 8px; }
-.cifra { font-family: var(--text); font-weight: 700; }
+.cifra { font-family: Arial, Helvetica, sans-serif; font-weight: 700; }
+.pl-shapka { display: flex; align-items: center; gap: 12px; }
+.znachok { width: 28px; height: 28px; }
