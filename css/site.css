@@ -231,3 +231,120 @@ p { margin: 0 0 1em; text-wrap: pretty; }
   .lampa::before, .puzyr.otvet { animation: none; }
   .nizhnyaya { transition: none; }
 }
+
+/* ---- Тексты владельца, возвращённые из боевой версии ---- */
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.knopki { display: flex; flex-wrap: wrap; gap: 12px; }
+.knopka.vtoraya { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 2px var(--ink); }
+.knopka.vtoraya:hover { background: color-mix(in srgb, var(--ink) 8%, transparent); filter: none; }
+.noch .knopka.vtoraya { color: var(--night-ink); box-shadow: inset 0 0 0 2px var(--night-ink); }
+.pervyj .podzagolovok { font: 400 clamp(1.3rem, 5.4vw, 2rem)/1.2 var(--display); color: var(--accent); margin: 18px 0 0; }
+.pervyj .vstuplenie { margin-top: 14px; }
+
+/* Три главных обещания */
+.vygody { display: grid; gap: 0; padding-top: 24px; }
+.vygody > div { padding: 24px 0; border-top: 1px solid var(--line); }
+.vygody h2 { font-size: clamp(1.35rem, 5.2vw, 1.75rem); line-height: 1.2; margin-bottom: 12px; }
+.vygody p { color: var(--muted); margin: 0 0 .6em; }
+
+/* Звёзды под ведомостью */
+.zvezdy { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 8px; font-size: 1.05rem; }
+
+/* Кто такая веб модель */
+.rabota .tekst h3 { font-size: 1.5rem; line-height: 1.2; margin: 32px 0 10px; }
+.rabota .tekst strong { font: 400 1.5em/1 var(--display); color: var(--accent); white-space: nowrap; }
+.noch .krupno { font: 400 clamp(1.15rem, 4.4vw, 1.5rem)/1.5 var(--text); max-width: 40em; margin-top: 22px; color: var(--night-ink); }
+
+/* Такси */
+.taksi { background: var(--accent); color: var(--accent-ink); }
+.taksi__obertka { display: grid; gap: 24px; padding: 48px 0; align-items: center; }
+.taksi h2 { font-size: clamp(1.6rem, 6vw, 2.4rem); line-height: 1.15; margin-bottom: 24px; }
+.taksi img { width: min(100%, 460px); height: auto; margin-inline: auto; }
+.taksi .knopka { background: var(--accent-ink); color: var(--accent); }
+.taksi .knopka.vtoraya { background: transparent; color: var(--accent-ink); box-shadow: inset 0 0 0 2px var(--accent-ink); }
+
+/* Площадки */
+.spisok-pl { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 0; }
+.spisok-pl li { display: grid; gap: 10px; padding: 22px 0; border-top: 1px solid var(--line); }
+.spisok-pl .logo { height: 44px; width: auto; max-width: 180px; object-fit: contain; object-position: left; background: #fff; border-radius: 8px; padding: 4px 8px; }
+.spisok-pl p { margin: 0; }
+.ssylka-sajt { font-weight: 600; color: var(--accent); text-underline-offset: 3px; justify-self: start; }
+
+/* Калькулятор */
+.kalk { margin-top: 24px; max-width: 560px; display: grid; gap: 22px; }
+.kalk .shag { display: grid; gap: 22px; }
+.kalk .shag[hidden] { display: none; }
+.pole { border: 0; margin: 0; padding: 0; display: grid; gap: 10px; min-width: 0; }
+.pole > label, .pole > legend { font-weight: 500; padding: 0; }
+.pole input[type=range] { width: 100%; accent-color: var(--accent); }
+.diapazon { display: flex; justify-content: space-between; color: var(--muted); font-size: 14px; }
+.pole input[type=text], .okno input[type=text] {
+  width: 100%; min-height: 52px; padding: 0 20px; border-radius: 999px; border: 1.5px solid var(--line);
+  background: var(--surface); color: var(--ink); font: 400 17px/1 var(--text);
+}
+.vybor { display: inline-block; margin: 0 8px 8px 0; }
+.vybor input { position: absolute; opacity: 0; }
+.vybor span { display: inline-grid; place-items: center; min-width: 52px; min-height: 52px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); cursor: pointer; font-weight: 500; }
+.vybor input:checked + span { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.vybor input:focus-visible + span { outline: 3px solid var(--accent); outline-offset: 3px; }
+.itog { font-size: 18px; margin: 0; }
+.itog__chislo { font: 400 clamp(2.2rem, 9vw, 3.2rem)/1 var(--display); margin-right: 6px; }
+.oshibka { color: var(--accent); font-weight: 500; margin: 0; }
+.galka { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.galka input { width: 22px; height: 22px; accent-color: var(--accent); flex: none; }
+
+/* Получи всё, что хочешь */
+.poluchi { display: grid; gap: 32px; align-items: center; }
+.poluchi p { max-width: 34em; }
+.zhizn { display: flex; align-items: flex-end; justify-content: center; gap: 8px; }
+.zhizn img { height: auto; min-width: 0; }
+.zhizn img:nth-child(1) { width: 42%; }
+.zhizn img:nth-child(2) { width: 36%; }
+.zhizn img:nth-child(3) { width: 22%; }
+
+/* Отзывы */
+.otzyvy-fon { background: var(--surface); border-block: 1px solid var(--line); }
+.otzyvy { display: grid; gap: 0; margin-top: 24px; }
+.otzyv { margin: 0; padding: 28px 0; border-top: 1px solid var(--line); }
+.otzyv figcaption { display: grid; grid-template-columns: 64px 1fr; column-gap: 16px; align-items: center; margin-bottom: 14px; }
+.otzyv img { grid-row: span 2; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.otzyv__imya { font: 400 1.35rem/1.2 var(--display); }
+.otzyv__rol { color: var(--muted); font-size: 15px; }
+.otzyv blockquote { margin: 0; }
+.otzyv p { margin: 0; }
+
+/* ТОП3 */
+.top3__spisok { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 0; }
+.top3__spisok li { display: grid; grid-template-columns: 100px 1fr; gap: 6px 18px; align-items: center; padding: 18px 0; border-top: 1px solid var(--line); }
+.top3__spisok li > img:first-child { max-width: 100px; max-height: 100px; background: #fff; border-radius: 12px; padding: 8px; grid-row: span 2; width: 100px; height: auto; object-fit: contain; }
+.top3__spisok .top3__shirokij { background: #fff; }
+.top3__spisok span { overflow-wrap: anywhere; font-weight: 500; }
+.zvezdy5 { height: 20px; width: auto; }
+
+/* Окно анкеты (работает и без скриптов: открывается по #anketa) */
+.okno { display: none; position: fixed; inset: 0; z-index: 100; place-items: center; padding: 16px; overflow-y: auto; }
+.okno:target, .okno.otkryto { display: grid; }
+.okno__fon { position: fixed; inset: 0; background: rgba(10, 6, 20, .6); }
+.okno__forma { position: relative; width: min(100%, 460px); background: var(--surface); color: var(--ink); border-radius: 24px; padding: 32px 24px 24px; display: grid; gap: 16px; }
+.okno__forma h2 { font-size: 1.7rem; line-height: 1.15; padding-right: 28px; }
+.okno__x { position: absolute; top: 12px; right: 16px; font-size: 30px; line-height: 1; text-decoration: none; color: var(--muted); }
+.melko { font-size: 13px; line-height: 1.45; color: var(--muted); margin: 0; }
+
+@media (min-width: 900px) {
+  .vygody { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .taksi__obertka { grid-template-columns: 1.2fr .8fr; padding: 56px 0; }
+  .zvezdy { grid-template-columns: 1fr 1fr; }
+  .spisok-pl { grid-template-columns: 1fr 1fr; column-gap: 64px; }
+  .poluchi { grid-template-columns: 1fr 1fr; gap: 64px; }
+  .otzyvy { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .otzyv { border-top: 0; }
+  .top3__spisok { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .top3__spisok li { grid-template-columns: 1fr; border-top: 1px solid var(--line); justify-items: start; gap: 12px; }
+  .top3__spisok li > img:first-child { grid-row: auto; }
+  .rabota .tekst { max-width: 40em; }
+}
+
+.varianty { display: flex; flex-wrap: wrap; }
+.poluchi h2 { margin-bottom: 16px; }
+.poluchi .knopka { margin-top: 8px; }
+.cifra { font-family: var(--text); font-weight: 700; }
